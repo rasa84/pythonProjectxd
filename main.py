@@ -274,28 +274,152 @@
 # # git config --global user.email "rasaliukste@yahoo.com"
 # # git config --global user.name "rasa84"
 
-hoursPerDay = 8
+print("******************************KEPYKLA************************************")
+# hoursPerDay = 8
+#
+# loafs_per_employee = int(input("Kiek darbuotojas gali iškepti kepalų per valandą: "))
+# total_employees = int(input("Kiek darbuotojų turi kepykla: "))
+# loaf_coast = int(input("Vieno kepalo savikaina: "))
+# loaf_selling_price = int(input("Vieno kepalo pardavimo kaina: "))
+# ordered_loafs_count = int(input("Kiek kepykla turi tą dieną iškepti kepalų (užsakymai): "))
+#
+# loafs_count_per_day = hoursPerDay * total_employees * loafs_per_employee
+# total_coast = loafs_count_per_day * loaf_coast
+# imaginary_income = loafs_count_per_day * loaf_selling_price
+# imaginary_profit = imaginary_income - total_coast
+#
+# print(f"Viso kepalų: {loafs_count_per_day}, viso išlaidų: {total_coast}, pajamos: {imaginary_income}, pelnas: {imaginary_profit}")
+#
+# if loafs_count_per_day - ordered_loafs_count >= 0:
+#     print("Kepykla spės iškepti visus kepalus")
+# else:
+#     print(f"Kepykla nespės iškepti {ordered_loafs_count - loafs_count_per_day} kepalų")
+#
+# income = ordered_loafs_count * loaf_selling_price
+# profit = income - total_coast
+#
+# print(f"Pajamos įvertinus pardavimus: {income}, "
+#       f"Pelnas įvertinus pardavimus: {profit}")
 
-loafs_per_employee = int(input("Kiek darbuotojas gali iškepti kepalų per valandą: "))
-total_employees = int(input("Kiek darbuotojų turi kepykla: "))
-loaf_coast = int(input("Vieno kepalo savikaina: "))
-loaf_selling_price = int(input("Vieno kepalo pardavimo kaina: "))
-ordered_loafs_count = int(input("Kiek kepykla turi tą dieną iškepti kepalų (užsakymai): "))
 
-loafs_count_per_day = hoursPerDay * total_employees * loafs_per_employee
-total_coast = loafs_count_per_day * loaf_coast
-imaginary_income = loafs_count_per_day * loaf_selling_price
-imaginary_profit = imaginary_income - total_coast
+print("********************ADDITIONAL TASK********************")
+# Sukurkite keturis kintamuosius ir ​random.randint(x,x)​ funkcija sugeneruokite jiems reikšmes nuo 0 iki 2. Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. (sprendimui masyvo nenaudoti).
 
-print(f"Viso kepalų: {loafs_count_per_day}, viso išlaidų: {total_coast}, pajamos: {imaginary_income}, pelnas: {imaginary_profit}")
+import random
 
-if loafs_count_per_day - ordered_loafs_count >= 0:
-    print("Kepykla spės iškepti visus kepalus")
-else:
-    print(f"Kepykla nespės iškepti {ordered_loafs_count - loafs_count_per_day} kepalų")
+# name = "John"
+# last_name = "Smith"
+# born = datetime.datetime(1990, 10, 10)
+# today = datetime.datetime.now()
+#
+# age = today.year - born.year
+# if (today.month, today.day) < (born.month, born.day):
+#     age -= 1
+# print(f"Aš esu Vardenis Pavardenis. Man yra {age} metai(ų)")
 
-income = ordered_loafs_count * loaf_selling_price
-profit = income - total_coast
+# var1 = random.randint(0, 4)
+# var2 = random.randint(0, 4)
+# print(f"Pirma reikšmė: {var1}, antra reikšmė: {var2}")
+#
+# if var1 > var2 and var2 != 0:
+#     print(f"Reikšmė padalinus: {round(var1/var2, 2)}")
+# elif var2 > var1 and var1 != 0:
+#     print(f"Reikšmė padalinus: {round(var2/var1, 2)}")
+# elif (var1 == var2):
+#     print("Abi reikšmės lygios")
+# else:
+#     print("Dalyba iš nulio negalima")
 
-print(f"Pajamos įvertinus pardavimus: {income}, "
-      f"Pelnas įvertinus pardavimus: {profit}")
+# var1 = random.randint(0, 25)
+# var2 = random.randint(0, 25)
+# var3 = random.randint(0, 25)
+# print(f"Pirma reikšmė: {var1}, antra reikšmė: {var2}, trečia reikšmė: {var3}")
+#
+# if var1 < var2 < var3 or var3 < var2 < var1:
+#     print("Vidurinė reikšmė yra antra")
+# elif var2 < var1 < var3 or var3 < var1 < var2:
+#     print("Vidurinė reikšmė yra pirma")
+# elif var1 < var3 < var2 or var2 < var3 < var1:
+#     print("Vidurinė reikšmė yra trečia")
+# else:
+#     print("Vidurinės reikšmės nėra")
+
+# var1 = random.randint(0, 10)
+# var2 = random.randint(0, 10)
+# var3 = random.randint(0, 10)
+# print(f"Pirma reikšmė: {var1}, antra reikšmė: {var2}, trečia reikšmė: {var3}")
+# if (var1 + var2) > var3 and (var1 + var3) > var2 and (var2 + var3) > var1:
+#     print("Trikampis gali egzistuoti")
+# else:
+#     print("Trikampis negali egzistuoti")
+
+# var1 = random.randint(0, 2)
+# var2 = random.randint(0, 2)
+# var3 = random.randint(0, 2)
+# var4 = random.randint(0, 2)
+# zeroes = 0
+# ones = 0
+# twos = 0
+# print(f"Pirma reikšmė: {var1}, antra reikšmė: {var2}, trečia reikšmė: {var3}, ketvirta reikšmė: {var4}")
+#
+# if var1 == 0:
+#     zeroes += 1
+# if var2 == 0:
+#     zeroes += 1
+# if var3 == 0:
+#     zeroes += 1
+# if var4 == 0:
+#     zeroes += 1
+#
+# print("etc..............")
+
+# var1 = random.randint(-10, 10)
+# var2 = random.randint(-10, 10)
+# var3 = random.randint(-10, 10)
+# print(f"Pirma reikšmė: {var1}, antra reikšmė: {var2}, trečia reikšmė: {var3}")
+# # Skaičiai mažesni už 0 turi būti  laužtiniuose skliaustuose [], 0 -  (), didesni už 0 {}.   [-4],  (0)
+# if var1 < 0:
+#     print(f"[{var1}]")
+# elif var1 > 0:
+#     print(f"{{{var1}}}")
+# elif var1 == 0:
+#     print(f"(0)")
+
+# price = 1
+# count = random.randint(5, 3000)
+#
+# if count > 1000:
+#     price -= price * 0.03
+# elif count > 2000:
+#     price -= price * 0.04
+#
+# print(f"Perkama {count} zvakiu {price * count} kaina")
+
+#    Abu vidurkius atspausdinkite. Rezultatus apvalinkite iki sveiko skaičiaus.
+
+# var1 = random.randint(0, 100)
+# var2 = random.randint(0, 100)
+# var3 = random.randint(0, 100)
+# count = 0
+# total = 0
+# print(f"Pirma reikšmė: {var1}, antra reikšmė: {var2}, trečia reikšmė: {var3}")
+# mean =  (var1 + var2 + var3) / 3
+# print(f"Vidurkis: {round(mean)}")
+#
+# if 10 < var1 < 90:
+#     count += 1
+#     total += var1
+# if 10 < var2 < 90:
+#     count += 1
+#     total += var2
+# if 10 < var3 < 90:
+#     count += 1
+#     total += var3
+# print(f"Vidurkis atmetus reiksmes: {round(total / count)}")
+
+time = datetime.datetime(100, 1, 1, random.randint(1, 24), random.randint(0, 59), random.randint(0, 59))
+print(f"Valandos: {time.time()}")
+number = random.randint(0, 300)
+print(f"Pridedamos sekundes: {number}")
+laterTime = time + datetime.timedelta(0, number)
+print(laterTime.time())
